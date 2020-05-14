@@ -1,0 +1,26 @@
+.slider {
+    position: relative;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30vw;
+	min-height: 30vw;	
+	margin: 0 auto;
+	padding: 10px;
+	border: 2px solid green;
+	border-radius: 5%;	
+	/*background-color: #05e8ba;*/
+    background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+}
+
+.image_container {
+	width: 80%;	
+	height: 50%;
+	position: absolute;
+	left: 10%;
+	transition: left ease 2s;	
+}
+
+.remove {	
+	left: -3000px;
+}
