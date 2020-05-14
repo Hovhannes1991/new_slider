@@ -1,5 +1,7 @@
 let images = ['buffalo.jpg', 'cat.jpg', 'coins.jpg', 'dog.jpg', 'horse.jpg', 'icecream.jpg', 'light_house.jpg', 'map.jpg', 'rose.jpg', 'with_love.jpg' ];
 
+let audio = new Audio();
+audio.src = 'src/sound/slide.ogg';
 
 let slider = document.getElementsByClassName('slider')[0];
 
@@ -30,6 +32,8 @@ setImages();
 
 slider.addEventListener('click', function(){
 	if(event.target.classList.contains('image_container')){
+		audio.currentTime  = 0;
+		audio.play();
 		event.target.classList.add('remove');
 		let item = event.target;
 		setTimeout( () => {
